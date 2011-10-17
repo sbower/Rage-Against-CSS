@@ -1,2 +1,83 @@
-h1= title
-p Welcome to #{title}
+!!! 5
+\<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+\<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+\<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+\<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+\<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+head
+  meta(http-equiv='X-UA-Compatible', content='IE=Edge;chrome=1')
+  meta(charset='utf-8')
+  title Columnal Demo Page
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  link(href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed', rel='stylesheet', type='text/css')
+  link(rel='stylesheet', href='/css/columnal.css', type='text/css', media='screen')
+  link(rel='stylesheet', href='/css/custom.css', type='text/css', media='screen')
+  link(rel='stylesheet', href='/css/build.css', type='text/css', media='screen')
+  link(rel='stylesheet', href='/css/codemirror/codemirror.css', type='text/css')
+  link(rel='stylesheet', href='/css/codemirror/night.css', type='text/css')
+body
+  #container
+    .row
+      #header.col_12 Rage against CSS
+      .col_6
+        h3.title Questions
+        ul.list
+          li.active
+            .arrow
+            .avatar
+            .body
+              .title= questions[0].title
+              .description= questions[0].description
+          - for q in questions
+            li.item
+              .arrow
+              .avatar
+              .body
+                .title= q.title
+                .description= q.description
+      .col_6.last.mobile-hide.answer
+        #question
+          h3.title HTML Question
+          .description Is it better to making web page using div tag or table?
+          ul.mode
+            li.active css
+            li html
+            li result
+          form
+            textarea(id="code", name="code")
+              body {
+                margin: 0;
+                padding: 3em 6em;
+                font-family: tahoma, arial, sans-serif;
+                color: #000;
+              }
+
+              #navigation a {
+                font-weight: bold;
+                text-decoration: none !important;
+              }
+
+              h1 {
+                font-size: 2.5em;
+              }
+
+              h2 {
+                font-size: 1.7em;
+              }
+          h3.title 2 Answers
+          ul.list
+            li
+              .avatar
+              .body
+                .title= questions[0].title
+                .description= questions[0].description
+            li
+              .avatar
+              .body
+                .title= questions[0].title
+                .description= questions[0].description
+
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js")
+  script(src="/js/codemirror.js")
+  script(src="/js/css.js")
+  script(src="js/app.js")
