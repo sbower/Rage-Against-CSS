@@ -1,13 +1,12 @@
-{   "name": "backbone-nowjs-demo"
-  , "version": "0.1.0"
-  , "description": "demo for Backbone connector for nowjs"
-  , "keywords": ["demo", "backbone", "nowjs", "connector"]
-  , "author": "mkuklis <michal.kuklis@gmail.com>"
+{   "name": "rage"
+  , "version": "0.0.1"
+  , "description": "Your daily WTF with CSS"
+  , "keywords": ["rage", "css"]
   , "dependencies": [
-        "express",
-        "jade",
-        "stylus"
-    ]
+    "express",
+    "jade",
+    "stylus"
+  ]
   , "main": "server.js"
   , "engines": { "node": "0.4.x" }
 }
