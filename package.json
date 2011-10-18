@@ -6,7 +6,7 @@
     "express",
     "jade",
     "stylus",
- 	"pg": "0.5.4"
+ 	  "pg"
   ]
   , "main": "server.js"
   , "engines": { "node": "0.4.x" }
