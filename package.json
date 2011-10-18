@@ -1,11 +1,13 @@
-{
-    "name": "application-name"
+{   "name": "rage"
   , "version": "0.0.1"
-  , "private": true
-  , "dependencies": {
-      "express": "2.4.7"
-    , "sass": ">= 0.0.1"
-    , "jade": ">= 0.0.1"
-    , "pg": "0.5.4"
-  }
+  , "description": "Your daily WTF with CSS"
+  , "keywords": ["rage", "css"]
+  , "dependencies": [
+    "express",
+    "jade",
+    "stylus",
+ 	"pg": "0.5.4"
+  ]
+  , "main": "server.js"
+  , "engines": { "node": "0.4.x" }
 }
